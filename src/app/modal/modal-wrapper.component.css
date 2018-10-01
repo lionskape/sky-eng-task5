@@ -1,0 +1,29 @@
+.modal {
+  background-color:rgba(0,0,0,.4);
+  height:100%;
+  bottom:0;
+  left:0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.fade-anim {
+  transition: opacity 400ms ease-in-out;
+  will-change: opacity;
+  opacity: 0;
+}
+
+.modal.fade-anim.in {
+  opacity: 1;
+}
+
+.modal-open {
+  overflow: hidden;
+}

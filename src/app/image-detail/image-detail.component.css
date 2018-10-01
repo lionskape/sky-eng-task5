@@ -1,0 +1,21 @@
+.modal-content {
+  background-color:#fff;
+  max-width: 600px;
+  position: relative;
+  transition: opacity 400ms ease-in-out;
+  width: 100%;
+  will-change: opacity;
+  display: block;
+  text-align: left;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.3);
+}
+
+.modal-body {
+  font-size: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

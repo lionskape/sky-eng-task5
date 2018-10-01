@@ -1,0 +1,8 @@
+<section class="gallery-grid">
+  <div class="gallery-grid_image-list">
+    <div *ngFor="let image of imageList" class="gallery-grid_image" >
+      <img src="{{image.thumbnailUrl}}" alt="{{image.title}}" (click)="showDetail(image)">
+    </div>
+  </div>
+  <button *ngIf="isNotCompleted" class="gallery-grid_load-more" (click)="loadMore()">Загрузить еще</button>
+</section>
